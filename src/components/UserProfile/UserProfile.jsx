@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "./UserProfile.module.css";
 
 const UserProfile = (props) => {
-  const { user : { name: "Anonim", age: 100, email: "anonim@gmail.com" } } =
+  const { user = { name: "Anonim", age: 100, email: "anonim@gmail.com" } } =
     props;
   const { name, age, email } = user;
   const [isColored, setIsColored] = useState(false);
