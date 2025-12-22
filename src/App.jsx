@@ -1,11 +1,9 @@
-
-import UserSection from './components/UserSection/UsersSection';
-
+import ShopPage from "./pages/ShopPage";
 function App() {
-  return <>
-    <UserSection/>
+  return  <>
+    <ShopPage />
     </>
-  ;
+    ;
 }
 
 export default App;

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./UserProfile.module.css";
+import { PropTypes } from 'prop-types';
 
 const UserProfile = (props) => {
   const { user = { name: "Anonim", age: 100, email: "anonim@gmail.com" } } =
@@ -23,5 +24,13 @@ const UserProfile = (props) => {
     </article>
   );
 };
+  UserProfile.propTypes = {
+  user: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    age: PropTypes.number.isRequired,
+    email: PropTypes.string.isRequired,
+  }),
+};
+
 
 export default UserProfile;
