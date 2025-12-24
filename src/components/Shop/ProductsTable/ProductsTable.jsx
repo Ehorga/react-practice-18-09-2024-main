@@ -1,8 +1,9 @@
 import Product from "../Product/Product";
-import products from "./data";
-
-const ProductsTable = () => {
-    const showProduct = (product) => (<Product key={product.id} product ={product}/>)
+const ProductsTable = (props) => {
+  const { products, addNewProduct } = props;
+  const showProduct = (product) => (
+    <Product key={product.id} product={product} addNewProduct={addNewProduct} />
+  );
   return (
     <table>
       <thead>

@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types'
 const Product = (props) => {
   const {
-    product: { title, price, quantity },
-  } = props;
-
+    product: {id ,title, price, quantity },
+    addNewProduct} = props;
+const addToCart = () => addNewProduct(id)
   return (
-    <tr>
+    <tr onClick={addToCart}>
       <td>{title}</td>
       <td>{price} uah</td>
       <td>{quantity || 0} etc.</td>
