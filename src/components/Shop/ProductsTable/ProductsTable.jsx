@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import Product from "../Product/Product";
 const ProductsTable = (props) => {
   const { products, addNewProduct } = props;
@@ -17,5 +18,8 @@ const ProductsTable = (props) => {
     </table>
   );
 };
-
+ProductsTable.propTypes = {
+  products:PropTypes.array,
+  addNewProduct:PropTypes.func,
+}
 export default ProductsTable;

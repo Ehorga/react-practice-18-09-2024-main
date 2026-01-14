@@ -17,9 +17,9 @@ const addNewProduct = (id) => {
     setProducts(productsAfterAdd);
     const [newProduct] = products.filter((product)=>product.id === id );
     if(cartProducts.includes(newProduct)){
-        newProduct.quantity ++ ;
+        newProduct.quantityInCart ++ ;
     }else{
-       newProduct.quantity = 1; 
+       newProduct.quantityInCart = 1; 
     }
     const newCartProducts= [...new Set([...cartProducts,newProduct])]
     setCartProducts(newCartProducts)
