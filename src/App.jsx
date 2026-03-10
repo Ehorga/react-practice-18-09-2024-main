@@ -1,7 +1,8 @@
-import QuizPage from './pages/QuizPage';
+import TimerBack from "./components/TimerBack/TimerBack";
+
 function App() {
   return  <>
-  <QuizPage/>
+  <TimerBack title="New year" dateStr="2024-10-31"/>
     </>
     ;
 }

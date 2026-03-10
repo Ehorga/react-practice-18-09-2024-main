@@ -1,6 +1,7 @@
 import { useState } from "react";
-import styles from "./UserProfile.module.css";
+import styles from "./UserProfile.module.scss";
 import { PropTypes } from 'prop-types';
+import cx from 'classnames';
 
 const UserProfile = (props) => {
   const { user = { name: "Anonim", age: 100, email: "anonim@gmail.com" } } =

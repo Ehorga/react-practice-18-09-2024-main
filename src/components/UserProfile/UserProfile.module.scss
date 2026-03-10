@@ -1,0 +1,31 @@
+@use '/src/common/styles/colors' as *;
+
+$indent: 10px;
+
+
+.user-profile {
+  padding: $indent;
+  padding-left: $indent * 3;
+  margin: $indent;
+  background-color: $secondaryBgColor;
+  width: $indent * 25;
+  h2 > span{
+    color: $accentColor
+  } 
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.amount {
+  padding: 0 $indent*2;
+}
+.select {
+  border: 4px solid $accentColor;
+}
+.noselect{
+  border: 4px solid $infoColor;
+}
