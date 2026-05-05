@@ -60,6 +60,6 @@ validationSchema = {registerSchema}>
         </div>
     )};
 
-const RegisterFormWithAuth = withUserAuth(RegisterForm );
+const RegisterFormWithAuth = withUserAuth(RegisterForm);
 
 export default RegisterFormWithAuth;
